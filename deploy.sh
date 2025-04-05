@@ -16,13 +16,13 @@ fi
 echo "Deploying Heygen Voice Explorer..."
 
 # Bring down any existing containers
-docker compose down
+docker-compose down
 
 # Pull images if using pre-built images or build locally
-docker compose build
+docker-compose build
 
 # Start the application
-docker compose up -d
+docker-compose up -d
 
 echo "Deployment completed successfully!"
 echo "The application is now running at http://localhost:3000" 
